@@ -1,0 +1,704 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bj" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvNoDuty"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="免责声明"
+            android:textColor="#ff0000"
+            android:textSize="20sp" />
+         <TextView
+            android:id="@+id/tvNoDutyContent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="声明：该软件只用于学习研究娱乐，使用者不得用该软件进行赌博，本人一概不承担任何法律责任，如使用者使用，即表示同意。"
+            android:textColor="#ff0000"
+            android:textSize="16sp" />
+
+<!-- +++++++++++++++++++++++++++++++++++++++++发包金额+++++++++++++++++++++++++++++++++++++ -->
+            <TextView
+                android:id="@+id/tvMoneyValue"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="28dp"
+                android:layout_marginTop="14dp"
+                android:text="发包金额（以元为单位）："
+                android:textColor="#ff0000"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/etMoneyValue"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|bottom"
+                android:text="1"
+                android:ems="10"
+                android:inputType="number"
+                android:maxLength="12" >
+                        <requestFocus />
+        	</EditText>
+<!-- ++++++++++++++++++++++++++++++++++++++++++++包数++++++++++++++++++++++++++++++++++ -->
+
+            <TextView
+                android:id="@+id/tvLuckyMoneyNum"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="28dp"
+                android:layout_marginTop="14dp"
+                android:text="包数："
+                android:textColor="#ff0000"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/etLuckyMoneyNum"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|bottom"
+                android:ems="10"
+                android:text="5"
+                android:inputType="number"
+                android:maxLength="12" />
+<!-- ++++++++++++++++++++++++++++++++++++++++支付密码++++++++++++++++++++++++++++++++++++++ -->
+          <TextView
+            android:id="@+id/tvPWD"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="14dp"
+            android:text="支付密码："
+            android:textColor="#ff0000"
+            android:textSize="20sp" />      
+         <EditText
+                android:id="@+id/etPWD"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|bottom"
+                android:ems="11"
+                android:text="000000"
+                android:inputType="number"
+                android:maxLength="12" />
+ <!-- ++++++++++++++++++++++++++++++输入金额++++++++++++++++++++++++++++++++++++++++++++++++ -->   
+        <TextView
+            android:id="@+id/tvPleaseInputMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="14dp"
+            android:text="请输入各包金额："
+            android:textColor="#ff0000"
+            android:textSize="20sp" />    
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >        
+         
+           <TextView
+            android:id="@+id/tvMoney1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="14dp"
+            android:text="第一包金额(元)："
+            android:textColor="#00ff00"
+            android:textSize="20sp" />      
+         <EditText
+                android:id="@+id/etMoney1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|bottom"
+                android:ems="11"
+                android:text=""
+                android:inputType="numberDecimal"
+                android:hint="0.00"
+                android:maxLength="12" /> 
+      
+   </LinearLayout>
+   <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >        
+         
+           <TextView
+            android:id="@+id/tvMoney2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="14dp"
+            android:text="第二包金额(元)："
+            android:textColor="#00ff00"
+            android:textSize="20sp" />      
+         <EditText
+                android:id="@+id/etMoney2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|bottom"
+                android:ems="11"
+                android:text=""
+                android:inputType="numberDecimal"
+                android:hint="0.00"
+                android:maxLength="12" /> 
+      
+         </LinearLayout>
+     <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >        
+         
+           <TextView
+            android:id="@+id/tvMoney3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="14dp"
+            android:text="第三包金额(元)："
+            android:textColor="#00ff00"
+            android:textSize="20sp" />      
+         <EditText
+                android:id="@+id/etMoney3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|bottom"
+                android:ems="11"
+                android:text=""
+                android:inputType="numberDecimal"
+                android:hint="0.00"
+                android:maxLength="12" /> 
+      
+         </LinearLayout>
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >        
+         
+           <TextView
+            android:id="@+id/tvMoney4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="14dp"
+            android:text="第四包金额(元)："
+            android:textColor="#00ff00"
+            android:textSize="20sp" />      
+         <EditText
+                android:id="@+id/etMoney4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|bottom"
+                android:ems="11"
+                android:text=""
+                android:inputType="numberDecimal"
+                android:hint="0.00"
+                android:maxLength="12" /> 
+      
+         </LinearLayout>
+                 <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >        
+         
+           <TextView
+            android:id="@+id/tvMoney5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="14dp"
+            android:text="第五包金额(元)："
+            android:textColor="#00ff00"
+            android:textSize="20sp" />      
+         <EditText
+                android:id="@+id/etMoney5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|bottom"
+                android:ems="11"
+                android:text=""
+                android:inputType="numberDecimal"
+                android:hint="0.00"
+                android:maxLength="12" /> 
+      
+         </LinearLayout>
+         
+ <!-- ++++++++++++++++++++++++++++++++++++++++++++埋雷位置++++++++++++++++++++++++++++++++++ -->
+         
+        <TextView
+                android:id="@+id/tvthunderPos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="28dp"
+                android:layout_marginTop="14dp"
+                android:text="埋雷位置："
+                android:textColor="#ff0000"
+                android:visibility="gone"
+                android:textSize="20sp" />
+        <RadioGroup
+                android:id="@+id/rgThunderPos"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:layout_height="wrap_content" >
+
+             <RadioButton
+                 android:id="@+id/rbFen"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:checked="true"
+                 android:text="分" />
+
+             <RadioButton
+                 android:id="@+id/rbJiao"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="角" />
+
+             <RadioButton
+                 android:id="@+id/rbYuan"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="元" />
+
+        </RadioGroup>         
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+         <TextView
+                android:id="@+id/tvThunerNum"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="28dp"
+                android:layout_marginTop="14dp"
+                android:text="请设置想要几个人中雷："
+                android:textColor="#ff0000"
+                android:visibility="gone"
+                android:textSize="20sp" />
+         <com.example.h3.FlowRadioGroup
+                android:id="@+id/rgThunderNum"
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:layout_height="wrap_content" >
+
+
+             <RadioButton
+                 android:id="@+id/rb1"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="1" />
+
+             <RadioButton
+                 android:id="@+id/rb2"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="2" />
+
+             <RadioButton
+                 android:id="@+id/rb3"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 
+                 android:text="3" />
+             <RadioButton
+                 android:id="@+id/rb4"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="4" />
+
+             <RadioButton
+                 android:id="@+id/rb5"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:checked="true"
+                 android:text="5" />
+
+
+             <RadioButton
+                 android:id="@+id/rb6"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="6" />
+             <RadioButton
+                 android:id="@+id/rb7"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="7" />
+
+             <RadioButton
+                 android:id="@+id/rb8"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="8" />
+
+             <RadioButton
+                 android:id="@+id/rb9"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="9" />
+             <RadioButton
+                 android:id="@+id/rb10"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="10" />
+
+  
+        </com.example.h3.FlowRadioGroup>    
+<!-- +++++++++++++++++++++++++++++是否计算最佳雷值 +++++++++++++++++++++++++++++++++++++++++++++++++ -->               
+        <TextView
+            android:id="@+id/tvCalcThunder"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="14dp"
+            android:text="请选择是否由软件计算最佳雷值："
+            android:textColor="#ff0000"
+            android:visibility="gone"
+            android:textSize="20sp" />
+
+        <RadioGroup
+                android:id="@+id/rgCalcThunder"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:layout_height="wrap_content" >
+                
+                <RadioButton
+                    android:id="@+id/rbAutoThunder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="自动计算雷值" />
+
+                <RadioButton
+                    android:id="@+id/rbHandThunder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="手动填写雷值" />
+            </RadioGroup>
+ <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->  
+           <TextView
+            android:id="@+id/tvLuckyMoneySay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="14dp"
+            android:text="红包上出现的文字："
+            android:textColor="#ff0000"
+            android:visibility="gone"
+            android:textSize="20sp" />      
+           <TextView
+            android:id="@+id/tvLuckyMoneySayWarning"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="5dp"
+            android:text="备注：选择【自动计算雷值】时可不填写这一栏"
+            android:textColor="#00ff00"
+            android:visibility="gone"
+            android:textSize="10sp" />      
+         <EditText
+                android:id="@+id/etLuckyMoneySay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|bottom"
+                android:ems="11"
+                android:text="软件自动生成"
+                android:inputType="text"
+                android:textColor="#ffff00"
+                android:visibility="gone"
+                android:maxLength="12" />       
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->               
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="14dp"
+            android:text="@string/lei_sel_type"
+            android:textColor="#ff0000"
+            android:visibility="gone"
+            android:textSize="20sp" />
+
+        <RadioGroup
+                android:id="@+id/rgMoneySay"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:layout_height="wrap_content" >
+                
+                <RadioButton
+                    android:id="@+id/rbTail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="文字尾为雷" />
+
+                <RadioButton
+                    android:id="@+id/rbHead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="文字首为雷" />
+            </RadioGroup>
+
+ <!-- +++++++++++++++++++++++++++++选择单雷双雷三雷 +++++++++++++++++++++++++++++++++++++++++++++++++ -->               
+        <TextView
+            android:id="@+id/tvSelThunderNum"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="14dp"
+            android:text="请选择埋雷个数："
+            android:textColor="#ff0000"
+            android:visibility="gone"
+            android:textSize="20sp" />
+
+        <RadioGroup
+                android:id="@+id/rgSayThunderNum"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:layout_height="wrap_content" >
+                
+                <RadioButton
+                    android:id="@+id/rbSingleThunder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="单雷" />
+
+                <RadioButton
+                    android:id="@+id/rbDoubleThunder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="双雷" />
+                <RadioButton
+                    android:id="@+id/rbThreeThunder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="三雷" />
+               <RadioButton
+                    android:id="@+id/rbFourThunder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="四雷" />
+                <RadioButton
+                    android:id="@+id/rbFiveThunder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="五雷" />
+            </RadioGroup>
+ <!-- +++++++++++++++++++++++++++++埋雷玩法+++++++++++++++++++++++++++++++++++++++++++++++++ -->               
+        <TextView
+            android:id="@+id/tvSelPutThunderPlaying"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="14dp"
+            android:text="请选择埋雷玩法："
+            android:textColor="#ff0000"
+            android:visibility="gone"
+            android:textSize="20sp" />
+
+        <RadioGroup
+                android:id="@+id/rgSelPutThunderPlaying"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:layout_height="wrap_content" >
+                
+                <RadioButton
+                    android:id="@+id/rbCommonPlaying"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="普通群玩法" />
+
+                <RadioButton
+                    android:id="@+id/rbBumpPlaying"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="碰碰群玩法" />
+            </RadioGroup>
+            <!-- +++++++++++++++++++++++语音模式 +++++++++++++++++++++++++++++++++++++++++++ -->
+        <TextView
+            android:id="@+id/tvSelSoundMode"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="14dp"
+            android:text="请选择发音模式："
+            android:textColor="#ff0000"
+            android:textSize="20sp" />
+  			<com.example.h3.FlowRadioGroup
+                android:id="@+id/rgSelSoundMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:orientation="horizontal" >
+                <RadioButton
+                    android:id="@+id/rbFemaleSound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="女声" />
+                <RadioButton
+                    android:id="@+id/rbMaleSound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="男声" />
+                <RadioButton
+                    android:id="@+id/rbSpecialMaleSound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="特别男声" />
+                <RadioButton
+                    android:id="@+id/rbMotionMaleSound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="情感男声" />
+                 <RadioButton
+                    android:id="@+id/rbChildrenSound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="情感儿童声" />
+                <RadioButton
+                    android:id="@+id/rbCloseSound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="关闭语音提示" />
+           </com.example.h3.FlowRadioGroup> 
+
+        
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->  
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->   
+      
+
+            <TextView
+                android:id="@+id/tvSpeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="28dp"
+                android:layout_marginTop="14dp"
+                android:text="请设置发包速度:当前发包延迟：10"
+                android:textColor="#ff0000"
+                android:textSize="20sp" />
+
+            <SeekBar
+                android:id="@+id/seekBar1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:progress="10"
+                android:max="100" />
+   <!-- ++++++++++++++++++++++++++++++++分辨率显示++++++++++++++++++++++++++++++++++++++++++++++ -->     
+        <TextView
+            android:id="@+id/tvResolution"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="14dp"
+            android:gravity="center"
+            android:text="本机分辨率"
+            android:textColor="#00ff00"
+            android:textSize="20sp" /> 
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->     
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="开启控制金额服务" />
+
+            <Button
+                android:id="@+id/btConcel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="启动QQ" />
+            <Button
+                android:id="@+id/btClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="关闭" />
+        </LinearLayout>
+  
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->     
+        <TextView
+            android:id="@+id/tvRegState"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="14dp"
+            android:gravity="center"
+            android:text="授权状态：未授权"
+            android:textColor="#ff0000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvRegWarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="14dp"
+            android:text="警告：技术及授权联系QQ：1541464569微信byc6354。"
+            android:textColor="#ff0000"
+            android:textSize="16sp" />
+         <TextView
+            android:id="@+id/tvHomePage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="0dp"
+            android:text="官方下载地址：\nhttp://119.23.68.205/android/index.htm"
+            android:textColor="#0000ff"
+            android:textSize="16sp" />
+         <TextView
+            android:id="@+id/tvRemark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="14dp"
+            android:text="使用说明：部分机型进群后不显示【开始发包】悬浮窗口，请到手机设置里面设置允许软件显示悬浮窗口。"
+            android:textColor="#ff00ff"
+            android:textSize="16sp" />
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->     
+        <TextView
+            android:id="@+id/tvPlease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="14dp"
+            android:text="请输入授权码："
+            android:textColor="#ff0000"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etRegCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:maxLength="12" 
+            android:inputType="number" />
+
+
+
+        <Button
+            android:id="@+id/btReg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定" />
+
+    </LinearLayout>
+
+</ScrollView>

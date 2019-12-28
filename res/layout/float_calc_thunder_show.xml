@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffff00"
+    android:orientation="vertical" >
+    
+         <TextView
+            android:id="@+id/tvCalcSay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="提交控制发包数据："
+            android:textColor="#ff0000"
+            android:textSize="16sp" />
+         <TextView
+            android:id="@+id/tvJE"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="总金额为："
+            android:textColor="#ff0000"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/tvNum"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="包数为："
+            android:textColor="#ff0000"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/tvThunder"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="各包数据均已提交！"
+            android:textColor="#ff0000"
+            android:textSize="16sp" />
+    
+</LinearLayout>

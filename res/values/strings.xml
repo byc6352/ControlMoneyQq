@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">QQ控制金额</string>
+    <string name="Title">QQ控制发包金额</string>
+    <string name="action_settings">帮助</string>
+    <string name="lei_sel_type">请选择雷的类型</string>
+    <string name="service_name">QQ控制金额</string>
+    <string name="accessibility_description">请启动QQ控制发包金额服务！</string>
+    <string name="floating">开始发包</string>
+
+</resources>
